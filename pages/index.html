@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enigma</title>
+    <script src="../js/encrypt.js"></script>
+  </head>
+  <body>
+    <main class="main-container">
+      <h1>Enigma machine</h1>
+      <section>
+        <textarea
+          name="encrypt"
+          oninput="getNormalText(this)"
+          id="encrypt"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <button id="encrypt-btn" onclick="showTextFunc()">Encrypt</button>
+        <button id="decrypt-btn">Decrypt</button>
+        <textarea name="decrypt" id="decrypt" cols="30" rows="10"></textarea>
+      </section>
+      <section>
+        <p id="text-result"></p>
+      </section>
+    </main>
+  </body>
+</html>
